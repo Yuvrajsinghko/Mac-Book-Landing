@@ -4,7 +4,14 @@ const Hero = () => {
   const videoRef = useRef();
 
   useEffect(() => {
-    if (videoRef.current) videoRef.current.playbackRate = 2;
+    const video = videoRef.current;
+    if (video) {
+      const setPlaybackRate = () => {
+        video.playbackRate = 2;
+      };
+      video.addEventListener('loadedmetadata', setPlaybackRate);
+      return () => video.removeEventListener('loadedmetadata', setPlaybackRate);
+    }
   }, []);
   return (
     <section id="hero">
