@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './component/NavBar'
 import Hero from './component/Hero'
+import ProductViewer from './component/ProductViewer'
   
 
 
@@ -9,6 +10,7 @@ function App() {
     <main>
       <NavBar />
       <Hero />
+      <ProductViewer />
     </main>
   )
 }
