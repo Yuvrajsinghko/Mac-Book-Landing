@@ -2,7 +2,8 @@ import React from 'react'
 import NavBar from './component/NavBar'
 import Hero from './component/Hero'
 import ProductViewer from './component/ProductViewer'
-  
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/all"; 
 
 
 function App() {
