@@ -10,9 +10,24 @@ const StudioLights = () => {
             intensity={10}
             position={[-10, 5, -5]}
             scale={10}
+            rotate-y={Math.PI / 2}
+          />
+          <Lightformer
+            form="rect"
+            intensity={10}
+            position={[10, 5, -5]}
+            scale={10}
+            rotate-y={Math.PI / 2}
           />
         </group>
       </Environment>
+      <spotLight 
+      position={[-2,10,5]}
+      angle={0.15}
+      decay={0}
+      intensity={Math.PI * 0.2}
+      
+      />
     </group>
   );
 };
