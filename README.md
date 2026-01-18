@@ -1,59 +1,149 @@
-# React + Vite
+<p align="center">
+  <img src="https://raw.githubusercontent.com/adrianhajdin/gsap_macbook_landing/main/public/preview.png" alt="Project Preview" width="800">
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">GSAP MacBook Landing Page</h1>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# MacBook Landing Page 💻
-
-A modern and responsive product landing page built using **React**.  
-This project focuses on clean UI design, basic animations, and simple global state management using **Zustand**.
-
----
-
-## ✨ What This Project Does
-- Displays a clean product-style landing page
-- Uses reusable React components
-- Manages shared UI state using Zustand
-- Includes basic animations and smooth interactions
-- Works well across desktop and mobile screens
+<p align="center">
+  <a href="https://github.com/Yuvrajsinghko/Mac-Book-Landing/stargazers">
+    ⭐ <b>Star this project</b>
+  </a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="https://mac-book-landing.vercel.app">
+    🚀 <b>Live Demo</b>
+  </a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#features">
+    📌 <b>Features</b>
+  </a>
+</p>
 
 ---
 
-## 🛠 Tech Stack
+## 🔥 About The Project
 
-- **React**
-- **JavaScript (ES6+)**
-- **Tailwind CSS**
-- **Zustand** (for state management)
-- **Vite**
+**GSAP MacBook Landing Page** is a high-fidelity, Apple-style product landing experience built using **React**, **Three.js**, **GSAP**, and **Tailwind CSS**.
 
----
+The project focuses on creating a cinematic scrolling experience with a realistic 3D MacBook model, smooth transitions, and scroll-triggered animations — replicating modern premium product websites.
 
-## 🧠 Why I Used Zustand
+This project demonstrates advanced frontend skills including:
 
-In this project, Zustand is used to manage shared UI state across components.  
-It helps avoid prop drilling and keeps the state logic simple and easy to understand.
-
-This project uses Zustand only for basic state needs, making it lightweight and beginner-friendly.
+* Scroll-based animation storytelling
+* 3D rendering in the browser
+* Performance-optimized UI interactions
 
 ---
 
-## ▶️ How to Run This Project Locally
+## 🧠 Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat&logo=greensock&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Zustand-000000?style=flat&logo=zustand&logoColor=white" />
+</p>
+
+---
+
+## ✨ Features
+
+* 🎮 **Realistic 3D MacBook Model** rendered with Three.js
+* 📜 **Scroll-Triggered Animations** using GSAP ScrollTrigger
+* 📌 **Pinned Sections & Mask Effects** for immersive storytelling
+* 🌀 **Smooth Timeline Transitions** across sections
+* 📱 **Fully Responsive Design** for all devices
+
+---
+
+## 🚀 Live Preview
+
+👉 **Live Demo:** [https://mac-book-landing.vercel.app](https://mac-book-landing.vercel.app)
+
+---
+
+## 🛠️ Installation & Setup
+
+Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/Yuvrajsinghko/mac-book-landing.git
-cd mac-book-landing
+git clone https://github.com/Yuvrajsinghko/Mac-Book-Landing.git
+cd Mac-Book-Landing
 npm install
-npm install zustand
 npm run dev
+```
+
+Open your browser at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📁 Project Structure
+
+```
+📦 public
+ ┣ 📂 models        # 3D GLTF assets
+ ┣ 📂 videos        # Scroll-based video assets
+ ┗ 📂 images
+
+📦 src
+ ┣ 📂 components    # UI & animation components
+ ┣ 📂 three         # Three.js helpers (lights, camera, scene)
+ ┣ 📂 store         # Zustand global state
+ ┣ 📂 constants     # Static data & configurations
+ ┣ 📜 App.jsx
+ ┗ 📜 main.jsx
+```
+
+---
+
+## 🧪 Animation Flow
+
+Animations are powered by **GSAP timelines** combined with **ScrollTrigger**:
+
+* **Hero Reveal** – Intro text and mask animation
+* **Scroll-Synced 3D Rotation** – MacBook reacts to scroll position
+* **Pinned Sections** – Long scroll storytelling
+* **Smooth Transitions** – Fade, scale, and transform effects
+
+This structure allows easy extension and fine-grained animation control.
+
+---
+
+## 🎯 Customization Guide
+
+* 🎨 **Change the 3D Model**
+  Replace the GLTF file inside `public/models` and update the loader.
+
+* 🧱 **Add New Sections**
+  Create new GSAP timelines and attach ScrollTriggers.
+
+* 📱 **Responsive Tweaks**
+  Use Tailwind breakpoints or conditional animation logic.
+
+---
+
+## 💡 Key Learnings
+
+* Integrated **Three.js with React** efficiently
+* Built **cinematic scroll animations** using GSAP
+* Structured large animation-heavy projects
+* Managed global state using **Zustand**
+* Improved UI performance using **Vite + Tailwind CSS**
+
+---
+
+## 🙌 Acknowledgements
+
+Inspired by Apple-style product pages and modern interactive web design.
+Built as a learning project to explore advanced frontend animation techniques.
+
+If you like this project, consider giving it a ⭐!
+
+---
+
+<sub>Built with ❤️ using React, GSAP, Three.js & Tailwind CSS</sub>
