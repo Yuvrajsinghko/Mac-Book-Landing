@@ -24,12 +24,12 @@
 
 **GSAP MacBook Landing Page** is a high-fidelity, Apple-style product landing experience built using **React**, **Three.js**, **GSAP**, and **Tailwind CSS**.
 
-The project delivers a cinematic scrolling experience with a realistic 3D MacBook model, scroll-triggered animations, and smooth transitions — inspired by modern premium product websites.
+The project focuses on creating a cinematic scrolling experience with a realistic 3D MacBook model, smooth transitions, and scroll-triggered animations — replicating modern premium product websites.
 
-This project showcases advanced frontend skills such as:
+This project demonstrates advanced frontend skills including:
 
 * Scroll-based animation storytelling
-* Real-time 3D rendering in the browser
+* 3D rendering in the browser
 * Performance-optimized UI interactions
 
 ---
@@ -37,19 +37,12 @@ This project showcases advanced frontend skills such as:
 ## 🧠 Tech Stack
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="80" height="80" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg" width="80" height="80" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" width="80" height="80" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" width="80" height="80" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" width="80" height="80" />
-</p>
-
-<p align="center">
-  <b>React</b> • <b>Three.js</b> • <b>GSAP</b> • <b>Tailwind CSS</b> • <b>Vite</b> • <b>Zustand</b>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat&logo=greensock&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Zustand-000000?style=flat&logo=zustand&logoColor=white" />
 </p>
 
 ---
@@ -60,7 +53,7 @@ This project showcases advanced frontend skills such as:
 * 📜 **Scroll-Triggered Animations** using GSAP ScrollTrigger
 * 📌 **Pinned Sections & Mask Effects** for immersive storytelling
 * 🌀 **Smooth Timeline Transitions** across sections
-* 📱 **Fully Responsive Design** for all screen sizes
+* 📱 **Fully Responsive Design** for all devices
 
 ---
 
@@ -71,6 +64,8 @@ This project showcases advanced frontend skills such as:
 ---
 
 ## 🛠️ Installation & Setup
+
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/Yuvrajsinghko/Mac-Book-Landing.git
@@ -115,28 +110,30 @@ Animations are powered by **GSAP timelines** combined with **ScrollTrigger**:
 * **Pinned Sections** – Long scroll storytelling
 * **Smooth Transitions** – Fade, scale, and transform effects
 
+This structure allows easy extension and fine-grained animation control.
+
 ---
 
 ## 🎯 Customization Guide
 
 * 🎨 **Change the 3D Model**
-  Replace the GLTF file inside `public/models`.
+  Replace the GLTF file inside `public/models` and update the loader.
 
 * 🧱 **Add New Sections**
-  Create new GSAP timelines and ScrollTriggers.
+  Create new GSAP timelines and attach ScrollTriggers.
 
 * 📱 **Responsive Tweaks**
-  Adjust Tailwind breakpoints or animation logic.
+  Use Tailwind breakpoints or conditional animation logic.
 
 ---
 
 ## 💡 Key Learnings
 
-* Integrated **Three.js with React**
-* Built **cinematic scroll animations** with GSAP
-* Structured animation-heavy projects cleanly
+* Integrated **Three.js with React** efficiently
+* Built **cinematic scroll animations** using GSAP
+* Structured large animation-heavy projects
 * Managed global state using **Zustand**
-* Improved UI performance with **Vite + Tailwind CSS**
+* Improved UI performance using **Vite + Tailwind CSS**
 
 ---
 
